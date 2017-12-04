@@ -34,33 +34,33 @@ All of these are mandatory.
 #### Starting up Zendomo:
 - First we gotta make sure docker isnt going to hamstring our butts:
 run:
-  docker kill $(docker ps -q)         //kills all open docker processes
-  docker rm $(docker ps -aq)          //cleaning up...
-  docker rmi $(docker images dev-* -q)  //cleaning up docker images...
+-  docker kill $(docker ps -q)         //kills all open docker processes
+-  docker rm $(docker ps -aq)          //cleaning up...
+-  docker rmi $(docker images dev-* -q)  //cleaning up docker images...
 
 - OPTIONAL: THIS REPO CONTAINS THESE THINGS, BUT FOR CLARITYS SAKE IL INCLUDE THE WHOLE PROCESS
 
-mkdir ~/fabric-tools && cd ~/fabric-tools
+- mkdir ~/fabric-tools && cd ~/fabric-tools
 
-curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/packages/fabric-dev-servers/fabric-dev-servers.zip
+- curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/packages/fabric-dev-servers/fabric-dev-servers.zip
 
-unzip fabric-dev-servers.zip
+- unzip fabric-dev-servers.zip
 
 What this does is installs fabric tools, but as I said, its here already...
 
 
-- NON-OPTIONAL: To start the developer environment (not the actually ledger):
+NON-OPTIONAL: To start the developer environment (not the actually ledger):
 
-cd ~/fabric-tools
-./downloadFabric.sh
-./startFabric.sh
-./createPeerAdminCard.sh
+- cd ~/place_w_below_stuff
+- ./downloadFabric.sh
+- ./startFabric.sh
+- ./createPeerAdminCard.sh
 
-- To end developer session (!important):
+To end developer session (!important):
 
-cd ~/fabric-tools
-./stopFabric.sh
-./teardownFabric.sh
+- cd ~/place_w_below_stuff
+- ./stopFabric.sh
+- ./teardownFabric.sh
 
 
 
@@ -69,24 +69,24 @@ cd ~/fabric-tools
 
 Assuming there isnt something odd going on with GOPATH variables in ROOT (actually there is a lot that could go wrong) we should be able to start the blockchain now...
 
-composer runtime install --card PeerAdmin@hlfv1 --businessNetworkName zendomo
+- composer runtime install --card PeerAdmin@hlfv1 --businessNetworkName zendomo
 
-composer network start --card PeerAdmin@hlfv1 --networkAdmin admin --networkAdminEnrollSecret adminpw --archiveFile zendomo@0.0.1.bna --file networkadmin.card
+- composer network start --card PeerAdmin@hlfv1 --networkAdmin admin --networkAdminEnrollSecret adminpw --archiveFile zendomo@0.0.1.bna --file networkadmin.card
 
-composer card import --file networkadmin.card
+- composer card import --file networkadmin.card
 
-composer-rest-server
-then: admin@zendomo
-      never use namespaces
-      No
-      Yes
-      No
-
+- composer-rest-server
+then: admin@zendomo, 
+      never use namespaces, 
+      No, 
+      Yes, 
+      No, 
+ 
 Should be good to go now.
 
 To restart zendomo:
 
-composer-rest-server -c admin@zendomo -n never -w true
+- composer-rest-server -c admin@zendomo -n never -w true
 
 
 # DISCLAIMER: THE LIKELYHOOD OF SOME INSTRUCTION BEING MISSING IS PRETTY MUCH 100%, COME GET THE ADMIN IF SOMETHING GOES WRONG
