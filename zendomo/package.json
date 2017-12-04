@@ -1,0 +1,22 @@
+{
+  "name": "zendomo",
+  "version": "0.0.1",
+  "description": "zendomo transaction chain 1p 1o",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "author": "Charles Boyce",
+  "email": "wxaz020@live.rhul.ac.uk",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "composer-admin": "latest",
+    "composer-client": "latest",
+    "composer-common": "latest",
+    "composer-connector-embedded": "latest",
+    "chai": "latest",
+    "eslint": "latest",
+    "istanbul": "latest",
+    "mkdirp": "latest",
+    "mocha": "latest"
+  }
+}
