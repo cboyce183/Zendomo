@@ -1,2 +1,0 @@
-# Zendomo
-Hyperledger fabric blockchain
