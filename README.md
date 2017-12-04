@@ -8,8 +8,14 @@
 - Docker > v17.03
 - Docker-compose > v1.8
 - npm v5.x (nothing else)
-- git > v2.9
+- git
 - Python > v2.7
+
+brew install docker
+brew install docker-compose
+npm is probably fine but check the version...
+
+then download docker from their website, run it until you see the green light...
 
 #### Instructions:
 - npm i -g composer-cli
@@ -38,7 +44,8 @@ unzip fabric-dev-servers.zip
 
 What this does is installs fabric tools, but as I said, its here already...
 
-- To start the developer environment (not the actually ledger):
+
+- NON-OPTIONAL: To start the developer environment (not the actually ledger):
 
 cd ~/fabric-tools
 ./downloadFabric.sh
@@ -79,3 +86,5 @@ composer-rest-server -c admin@zendomo -n never -w true
 
 
 # DISCLAIMER: THE LIKELYHOOD OF SOME INSTRUCTION BEING MISSING IS PRETTY MUCH 100%, COME GET THE ADMIN IF SOMETHING GOES WRONG
+
+### Can confirm this worked for Bob, happy hacking.
