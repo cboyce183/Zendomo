@@ -11,9 +11,13 @@
 - git
 - Python > v2.7
 
+To do this:
+
 - brew install docker
 - brew install docker-compose
 - npm is probably fine but check the version...
+- if you dont have git I dont know how you are reading this
+- you should have python, but check python --version, and get it if you dont
 
 then download docker from their website, run it until you see the green light...
 
