@@ -5,11 +5,11 @@
 ### Here is a set of instructions for attempting to make this work locally for you.
 
 #### Pre-reqs:
-- Docker < v17.03
-- Docker-compose < v1.8
+- Docker > v17.03
+- Docker-compose > v1.8
 - npm v5.x (nothing else)
-- git < v2.9
-- Python < v2.7
+- git > v2.9
+- Python > v2.7
 
 #### Instructions:
 - npm i -g composer-cli
