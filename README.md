@@ -1,8 +1,6 @@
-# Hello
+# Hello from the Zendomo Team
 
-## If you found your way here, congratulations, and welcome to hell.
-
-### Here is a set of instructions for attempting to make this work locally for you.
+### Here is a set of instructions to make this work locally for you.
 
 #### Pre-reqs:
 - Docker > v17.03
@@ -62,9 +60,6 @@ To end developer session (!important):
 - ./stopFabric.sh
 - ./teardownFabric.sh
 
-
-
-#### Omitting how to make the blockchain, because I only have 8gb of ram.
 #### Firing up the blockchain
 
 Assuming there isnt something odd going on with GOPATH variables in ROOT (actually there is a lot that could go wrong) we should be able to start the blockchain now...
@@ -89,6 +84,6 @@ To restart zendomo:
 - composer-rest-server -c admin@zendomo -n never -w true
 
 
-# DISCLAIMER: THE LIKELYHOOD OF SOME INSTRUCTION BEING MISSING IS PRETTY MUCH 100%, COME GET THE ADMIN IF SOMETHING GOES WRONG
+# DISCLAIMER: THIS IS A COMPLEX PROCEDURE, CONTACT CBOYCE183 @ GITHUB WITH ANY QUESTIONS/ISSUES
 
-### Can confirm this worked for Bob, happy hacking.
+### CONFIRM: Not deprecated as of 1/12/17.

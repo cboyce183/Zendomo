@@ -2,13 +2,24 @@
  * My commodity trading network
  */
 namespace org.zendomo.biznet
-asset Commodity identified by tradingSymbol {
-    o String tradingSymbol
+
+asset Zen identified by description {
     o String description
-    o String mainExchange
-    o Double quantity
+    o Double tokens
+    o Double credits
     --> Trader owner
 }
+
+transaction tokenTransaction {
+    --> Zen asset
+    o Double newTokens
+}
+
+transaction creditTransaction {
+    --> Zen asset
+    o Double newCredits
+}
+
 participant Trader identified by tradeId {
     o String tradeId
     o String firstName
@@ -16,6 +27,7 @@ participant Trader identified by tradeId {
     o Double tokens
     o Double credits
 }
+
 transaction Trade {
     --> Commodity commodity
     --> Trader newOwner
