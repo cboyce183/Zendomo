@@ -1,6 +1,6 @@
 # Hello from the Zendama Team
 
-Zendomo is a byzantine fault tolerant consensus based blockchain, implemented using Hyperledger Fabric and Hyperledger Composer, for the Zendama platform.
+Zendomo is a byzantine fault tolerant consensus based blockchain, implemented using Hyperledger Fabric and Hyperledger Composer, for the Zendama platform. This repo contains the public test version for devs working on front end Zendama to run locally to test their changes. Full private is currently unavailable for public download.
 
 ### Here is a set of instructions to make this work locally for you.
 
