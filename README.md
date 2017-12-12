@@ -1,4 +1,4 @@
-# Hello from the Zendomo Team
+# Hello from the Zendama Team
 
 Zendomo is a byzantine fault tolerant consensus based blockchain, implemented using Hyperledger Fabric and Hyperledger Composer, for the Zendama platform.
 
