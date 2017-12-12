@@ -16,7 +16,7 @@ To do this:
 - brew install docker
 - brew install docker-compose
 - npm is probably fine but check the version...
-- if you dont have git I dont know how you are reading this
+- if you are reading this, you likely have git
 - you should have python, but check python --version, and get it if you dont
 
 then download docker from their website, run it until you see the green light...
@@ -32,7 +32,7 @@ This installs Hyperledger composer, generator, server, && yeoman (it runs stuff 
 All of these are mandatory.
 
 #### Starting up Zendomo:
-- First we gotta make sure docker isnt going to hamstring our butts:
+- First we have to make sure docker isnt going to mess anything up:
 run:
 -  docker kill $(docker ps -q)         //kills all open docker processes
 -  docker rm $(docker ps -aq)          //cleaning up...
@@ -46,8 +46,7 @@ run:
 
 - unzip fabric-dev-servers.zip
 
-What this does is installs fabric tools, but as I said, its here already...
-
+What this does is it installs fabric tools, but as I said, its here already if copied.
 
 NON-OPTIONAL: To start the developer environment (not the actually ledger):
 
